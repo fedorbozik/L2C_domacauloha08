@@ -25,7 +25,7 @@
 body {
   color: #c4cbcf;
   background-color: #00afc4;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-smoothing: antialiased;
   /* NAVIGATION */
   /* MAIN/ARTICLES */
@@ -80,7 +80,7 @@ body .nav-bar .logo {
 }
 body .nav-bar .logo a {
   display: block;
-  background: url('../img/tilde-logo.png') 0 0 no-repeat;
+  background: url("../img/tilde-logo.png") 0 0 no-repeat;
   width: 29px;
   height: 32px;
   margin-top: 22px;
@@ -164,7 +164,7 @@ body .post-header .arrow {
   font-size: 1.25em;
   letter-spacing: -1.5px;
   z-index: 15;
-  background: url('../img/yellow-arrow.png') no-repeat;
+  background: url("../img/yellow-arrow.png") no-repeat;
   background-position: center;
   height: 2em;
 }
@@ -181,7 +181,7 @@ body .post-header .post-description {
 body .post-header .border-top {
   position: relative;
   background-color: transparent;
-  background-image: url('../img/blue-grey-triangle-border.png');
+  background-image: url("../img/blue-grey-triangle-border.png");
   background-position: top;
   background-repeat: repeat-x;
   background-size: 14px 7px;
@@ -206,7 +206,7 @@ body .post-header .border-top .icon-list li {
 body .post-header .border-top .border-bottom {
   position: relative;
   background-color: transparent;
-  background-image: url('../img/lattice.gif');
+  background-image: url("../img/lattice.gif");
   background-position: top;
   background-repeat: repeat-x;
   z-index: 14;

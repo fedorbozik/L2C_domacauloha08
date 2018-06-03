@@ -1,16 +1,15 @@
 // out: ./style.css, compress: false, strictMath: true, clean-css, autoprefixer: last 3 versions
 
 //Custom MQ
-@xs: ~ "only screen and (min-width: 768px)";
-@sm: ~ "only screen and (min-width: 1024px)";
-@md: ~ "only screen and (min-width: 1280px)";
-@lg: ~ "only screen and (min-width: 1440px)";
-@xl: ~ "only screen and (min-width: 1921px)";
+@xs: ~"only screen and (min-width: 768px)";
+@sm: ~"only screen and (min-width: 1024px)";
+@md: ~"only screen and (min-width: 1280px)";
+@lg: ~"only screen and (min-width: 1440px)";
+@xl: ~"only screen and (min-width: 1921px)";
 
 //Fonts
 //@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700|Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900');
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900");
 
 // COLORS
 @gray: #c4cbcf;
@@ -20,15 +19,16 @@
 body {
   color: @gray;
   background-color: @primary;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-smoothing: antialiased;
 
   .container,
   .group,
   .menu {
-    *zoom:1;
+    *zoom: 1;
 
-    &:before, &:after {
+    &:before,
+    &:after {
       content: " ";
       display: table;
     }
@@ -52,11 +52,11 @@ body {
     margin: 0 auto;
 
     .menu {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    float: left;
-  }
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      float: left;
+    }
   }
 
   /* NAVIGATION */
@@ -66,53 +66,53 @@ body {
     align-items: center;
 
     .logo {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    float: left;
-
-    a {
-      display: block;
-      background: url('../img/tilde-logo.png') 0 0 no-repeat;
-      width: 29px;
-      height: 32px;
-      margin-top: 22px;
-      margin-left: 0.8em;
-    }
-  }
-
-    nav {
-    display: flex;
-    align-items: center;
-
-    .navigation {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
       float: left;
-      margin: 0 auto;
-      height: 84px;
 
       a {
-      color: #c4cbcf;
-      display: block;
-      text-decoration: none;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 20px;
-    }
-      li {
-      float: left;
-      padding-top: 1.7em;
-      padding-right: 5em;
-
-      &:first-child {
-        padding-left: 3em;
-      }
-
-      &:last-child {
-        padding-right: 0;
+        display: block;
+        background: url("../img/tilde-logo.png") 0 0 no-repeat;
+        width: 29px;
+        height: 32px;
+        margin-top: 22px;
+        margin-left: 0.8em;
       }
     }
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      .navigation {
+        float: left;
+        margin: 0 auto;
+        height: 84px;
+
+        a {
+          color: #c4cbcf;
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+        li {
+          float: left;
+          padding-top: 1.7em;
+          padding-right: 5em;
+
+          &:first-child {
+            padding-left: 3em;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
     }
-  }
   }
 
   /* MAIN/ARTICLES */
@@ -122,109 +122,110 @@ body {
     text-align: center;
 
     .motto-background {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 70px;
-    background: #00afc4 url("../img/code-background.png") center center/auto 100% repeat-y;
-  }
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 70px;
+      background: #00afc4 url("../img/code-background.png") center center/auto
+        100% repeat-y;
+    }
 
     .greetings {
-    color: #0b343c;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 2em;
-    letter-spacing: -3.5px;
-    padding-top: 1em;
-    .motto {
-      color: white;
+      color: #0b343c;
       text-transform: uppercase;
       font-weight: 900;
-      font-size: 6em;
-      letter-spacing: -8px;
-      margin-top: -0.15em;
-      margin-bottom: -0.1em;
+      font-size: 2em;
+      letter-spacing: -3.5px;
+      padding-top: 1em;
+      .motto {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 6em;
+        letter-spacing: -8px;
+        margin-top: -0.15em;
+        margin-bottom: -0.1em;
+      }
     }
-  }
 
     .description {
-    font-weight: 300;
-    font-size: 1.95em;
-    p {
-      margin-top: -0.8em;
+      font-weight: 300;
+      font-size: 1.95em;
+      p {
+        margin-top: -0.8em;
+      }
     }
-  }
 
     .home-team-photo {
-    width: 30em;
-    margin-top: -2em;
-  }
+      width: 30em;
+      margin-top: -2em;
+    }
 
     .arrow {
-    position: relative;
-    color: #121b21;
-    text-transform: uppercase;
-    text-align: center;
-    margin: -2em;
-    padding-top: 0.8em;
-    font-weight: 900;
-    font-size: 1.25em;
-    letter-spacing: -1.5px;
-    z-index: 15;
-    background: url('../img/yellow-arrow.png') no-repeat;
-    background-position: center;
-    height: 2em;
-  }
+      position: relative;
+      color: #121b21;
+      text-transform: uppercase;
+      text-align: center;
+      margin: -2em;
+      padding-top: 0.8em;
+      font-weight: 900;
+      font-size: 1.25em;
+      letter-spacing: -1.5px;
+      z-index: 15;
+      background: url("../img/yellow-arrow.png") no-repeat;
+      background-position: center;
+      height: 2em;
+    }
 
     .post-description {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 1.05em;
-    color: #535b60;
-    height: 2em;
-    margin-top: 2em;
-    margin-bottom: 0;
-    padding-top: 2em;
-  }
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 1.05em;
+      color: #535b60;
+      height: 2em;
+      margin-top: 2em;
+      margin-bottom: 0;
+      padding-top: 2em;
+    }
     .border-top {
-    position: relative;
-    background-color: transparent;
-    background-image: url('../img/blue-grey-triangle-border.png');
-    background-position: top;
-    background-repeat: repeat-x;
-    background-size: 14px 7px;
-    /*margin-left: -13em;*/
-    z-index: 13;
-    margin: -0.7em;
-    padding-top: 2.95em;
-    overflow: hidden;
-
-    .middle {
-      background-color: #edf3f3;
-    }
-
-    .icon-list {
-      list-style: none;
-      margin-bottom: 0.6em;
-      padding-bottom: 1em;
-
-      li{
-      display: inline;
-      padding-left: 1.5em;
-    }
-    }
-
-    .border-bottom {
       position: relative;
       background-color: transparent;
-      background-image: url('../img/lattice.gif');
+      background-image: url("../img/blue-grey-triangle-border.png");
       background-position: top;
       background-repeat: repeat-x;
-      z-index: 14;
+      background-size: 14px 7px;
+      /*margin-left: -13em;*/
+      z-index: 13;
       margin: -0.7em;
-      padding-top: 2em;
+      padding-top: 2.95em;
       overflow: hidden;
+
+      .middle {
+        background-color: #edf3f3;
+      }
+
+      .icon-list {
+        list-style: none;
+        margin-bottom: 0.6em;
+        padding-bottom: 1em;
+
+        li {
+          display: inline;
+          padding-left: 1.5em;
+        }
+      }
+
+      .border-bottom {
+        position: relative;
+        background-color: transparent;
+        background-image: url("../img/lattice.gif");
+        background-position: top;
+        background-repeat: repeat-x;
+        z-index: 14;
+        margin: -0.7em;
+        padding-top: 2em;
+        overflow: hidden;
+      }
     }
-  }
   }
 
   .pre-footer {
@@ -234,16 +235,14 @@ body {
     overflow: hidden;
 
     &-title {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 1em;
-    color: black;
-    padding-top: 2em;
-    letter-spacing: -1.2px;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 1em;
+      color: black;
+      padding-top: 2em;
+      letter-spacing: -1.2px;
+    }
   }
-  }
 
-/* FOOTER */
-
-
+  /* FOOTER */
 }
